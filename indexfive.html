@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Robi Saputra</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .navbar {
+        background-color: #007BFF;
+        overflow: hidden;
+    }
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    .navbar a:hover {
+        background-color: #0056b3;
+    }
+    .header {
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        background-color: #007BFF;
+    }
+    .header h1 {
+        margin: 0;
+    }
+    .intro {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .intro p {
+        color: #666;
+        font-size: 1.2em;
+    }
+    .skills, .portfolio, .contact {
+        margin: 40px 0;
+    }
+    .skills h2, .portfolio h2, .contact h2 {
+        color: #007BFF;
+    }
+    .skills ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skills li {
+        background-color: #007BFF;
+        color: white;
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    .portfolio-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .portfolio-item {
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+    }
+    .portfolio-item h3 {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact input, .contact textarea {
+        width: 100%;
+        max-width: 500px;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .contact button {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .contact button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="indextriple.html">jasa</a>
+    <a href="indexfour.html">CV</a>
+    <a href="indexnine.html">Contact</a>
+</div>
+
+<div class="container">
+    <div class="header">
+        <h1>Robi Saputra</h1>
+        <p>Programers dev</p>
+    </div>
+
+    <div class="intro">
+        <h2>About Me</h2>
+        <p>saya adalah programer yg sedang mengejar kesuksesan dengan berbagai komptensi dan berusaha menghasilkan karya</p>
+    </div>
+
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>Vue.js</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>UI/UX Design</li>
+            <li>IOT</li>
+        </ul>
+    </div>
+
+    <div class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="images/pj1.png" alt="Project 1">
+                <h3>Project 1</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/pj2.png" alt="Project 2">
+                <h3>Project 2</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/pj3.jpeg" alt="Project 3">
+                <h3>Project 3</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/pj4.jpeg" alt="Project 4">
+                <h3>Project 4</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

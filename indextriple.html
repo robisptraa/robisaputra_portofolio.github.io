@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penawaran Jasa Robi Saputra</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f4f4f4;
+            color: rgb(51, 51, 51);
+        }
+        header {
+            background: rgb(4, 29, 83);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgb(19, 85, 170);
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 20px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background: #555;
+        }
+        .banner {
+            position: relative;
+            height: 400px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner h1 {
+            font-size: 50px;
+            margin: 0;
+			z-index: 10;
+        }
+        .banner p {
+            font-size: 20px;
+            z-index: 10;
+        }
+        .slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            transition: transform 1s ease;
+        }
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .slide-nav {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            z-index: 10;
+        }
+        .slide-nav button {
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .service {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex: 1 1 30%;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .service h3 {
+            margin-top: 0;
+        }
+        .contact-form {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-form h2 {
+            margin-top: 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #555;
+        }
+        footer {
+            background: rgb(4, 8, 253);
+            color: rgb(15, 12, 12);
+            text-align: center;
+            padding: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                flex: 1 1 80%;
+            }
+        }
+		h1 {
+			color: #ffffff;
+	        font-weight: 600;
+		}
+		
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Technology Startup Services Obet Company</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="indexsecond.html">tentang</a></li>
+            <li><a href="indextriple.html">Jasa</a></li>
+            <li><a href="indexfour.html">CV</a></li>
+            <li><a href="indexfive.html">Portofolio</a></li>
+            <li><a href="indexnine.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner" id="home">
+        <div class="slider">
+            <div class="slides">
+                <img src="images/jasa1.jpeg" alt="Slide 1">
+                <img src="images/jasa2.jpeg" alt="Slide 2">
+                <img src="images/jasa3.jpeg" alt="Slide 3">
+            </div>
+        </div>
+        <h1>Selamat Datang!</h1>
+        <p>Kami Menawarkan Berbagai Layanan Profesional</p>
+        <div class="slide-nav">
+            <button onclick="showSlide(0)"></button>
+            <button onclick="showSlide(1)"></button>
+            <button onclick="showSlide(2)"></button>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="services" id="services">
+             <div class="service">
+             <h3>Web development</h3>
+                <p>Kami menyediakan layanan pengembangan web berkualitas tinggi yang dapat disesuaikan dengan kebutuhan bisnis Anda mulai dari Native or Framework(UI/UX,Front end,Back end DEV).</p>
+            </div>
+            <div class="service">
+                <h3>IOT/Robotic(hardware creative and construction programing)</h3>
+                <p>Layanan IOT/Robotic Hardware kami mencakup pembuatan Skema, Code, protocol, dan integrasi all system C++/phyton leaguage.</p>
+            </div>
+            <div class="service">
+                <h3>PC/HP service</h3>
+                <p>Kami menawarkan layanan jasa perbaikan Hardware/sofware untuk berbagai device windows,android,Ios,MAc,linux dll.</p>
+            </div>
+        </section>
+
+        <section class="contact-form" id="contact">
+            <h2>Kontak Kami</h2>
+            <form>
+                <input type="text" name="name" placeholder="Nama Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Robi Saputra. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelector('.slides');
+            currentSlide = index;
+            const slideWidth = document.querySelector('.slides img').clientWidth;
+            slides.style.transform = `translateX(${-slideWidth * index}px)`;
+        }
+
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % 3;
+            showSlide(currentSlide);
+        }, 3000);
+    </script>
+</body>
+</html>
